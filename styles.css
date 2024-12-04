@@ -49,11 +49,15 @@ a.nav-link:hover {
     height: 60px;
 }
 
-/*media query to keep nav icon image (middle one) at the top when smaller screen dropdown menu is active*/
+.navbar .container {
+    position: relative;
+}
+
+/*Media Query to stop middle nav icon from dropping on smaller screens with dropdown nav bar*/
 @media (max-width: 992px) {
     .navbar-center-icon {
-        position: fixed;
-        top: 35px;
+        top: 0;
+        transform: translateX(-50%);
     }
 }
 
